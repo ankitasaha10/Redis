@@ -1,4 +1,4 @@
-package com.example.redisFirstProject;
+package com.example.redisproject.exception;
 
 
 import org.springframework.http.HttpStatus;
