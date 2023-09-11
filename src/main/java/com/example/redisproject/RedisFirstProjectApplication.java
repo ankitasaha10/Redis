@@ -1,4 +1,4 @@
-package com.example.redisFirstProject;
+package com.example.redisproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
