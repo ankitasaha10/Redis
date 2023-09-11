@@ -10,4 +10,6 @@ public interface InvoiceService {
 
   public void deleteInvoice(Integer invId);
 
+//  public Object getAllInvoices();
+
 }

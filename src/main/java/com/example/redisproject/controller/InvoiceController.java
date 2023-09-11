@@ -1,7 +1,10 @@
 package com.example.redisproject.controller;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -23,15 +26,15 @@ public class InvoiceController {
     return invoiceService.saveInvoice(inv);
   }
 
-//   @GetMapping("/allInv")
-//   public ResponseEntity<List<Invoice>> getAllInvoices(){
-//   return ResponseEntity.ok(invoiceService.getAllInvoices());
-//   }
-//  
-//   @GetMapping("/getOne/{id}")
-//   public Invoice getOneInvoice(@PathVariable Integer id) {
-//   return invoiceService.getOneInvoice(id);
-//   }
+//  @GetMapping("/allInv")
+//  public ResponseEntity<List<Invoice>> getAllInvoices() {
+//    return ResponseEntity.ok(invoiceService.getAllInvoices());
+//  }
+//
+//  @GetMapping("/getOne/{id}")
+//  public Invoice getOneInvoice(@PathVariable Integer id) {
+//    return invoiceService.getOneInvoice(id);
+//  }
 
   @PutMapping("/modify/{id}")
   public Invoice updateInvoice(@RequestBody Invoice inv, @PathVariable Integer id) {

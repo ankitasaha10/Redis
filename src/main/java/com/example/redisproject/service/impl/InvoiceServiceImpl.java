@@ -17,6 +17,7 @@ public class InvoiceServiceImpl implements InvoiceService {
   @Autowired
   private InvoiceRepository invoiceRepository;
 
+  @CachePut(cacheNames = "Invoice", key = "#inv.invId")
   @Override
   public Invoice saveInvoice(Invoice inv) {
     return invoiceRepository.save(inv);
